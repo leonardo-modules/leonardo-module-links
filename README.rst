@@ -23,8 +23,6 @@ or as leonardo bundle
 
 Add ``leonardo_module_links`` to APPS list, in the ``local_settings.py``::
 
-.. code-block:: python
-
     APPS = [
         ...
         'links'
@@ -43,7 +41,7 @@ Load new template to db
 
 .. code-block:: bash
 
-	python manage.py sync_all
+    python manage.py sync_all
 
 
 See `Leonardo`_
