@@ -16,30 +16,30 @@ class LinkCategory(models.Model):
         return u'%s' % self.name
 
     class Meta:
-        verbose_name = _('link category')
-        verbose_name_plural = _('link categories')
+        verbose_name = _('Link list')
+        verbose_name_plural = _('Link lists')
 
 
 TARGET_CHOICES = (
-    ('_none', _('same window')),
-    ('_modal', _('modal window')),
-    ('_blank', _('new tab')),
+    ('_none', _('Same window')),
+    ('_blank', _('New window')),
+    ('_modal', _('Modal window')),
 )
 
 
 class Link(models.Model, TranslatedObjectMixin):
     web_address = models.CharField(
-        max_length=255, verbose_name=_("web address"))
+        max_length=255, verbose_name=_("Link"))
     target = models.CharField(max_length=255, verbose_name=_(
         "target"), choices=TARGET_CHOICES, default='_none')
     relationship = models.ForeignKey('self',
                                      blank=True, null=True, verbose_name=_("link relationship"))
     image = models.ForeignKey(
-        Image, blank=True, null=True, verbose_name=_("image"))
-    category = models.ForeignKey(LinkCategory, verbose_name=_("link category"))
+        Image, blank=True, null=True, verbose_name=_("Image"))
+    category = models.ForeignKey(LinkCategory, verbose_name=_("List"))
     visible = models.BooleanField(verbose_name=_("visible"), default=True)
     ordering = models.PositiveIntegerField(
-        verbose_name=_("ordering"), default=0)
+        verbose_name=_("Ordering"), default=0)
 
     objects = TranslatedObjectManager()
 
@@ -65,8 +65,8 @@ class Link(models.Model, TranslatedObjectMixin):
 
     class Meta:
         ordering = ['ordering', ]
-        verbose_name = _('link')
-        verbose_name_plural = _('links')
+        verbose_name = _('Link item')
+        verbose_name_plural = _('Link items')
 
 
 class LinkTranslation(Translation(Link)):
@@ -79,8 +79,8 @@ class LinkTranslation(Translation(Link)):
     description = models.TextField(_('description'), blank=True)
 
     class Meta:
-        verbose_name = _('link translation')
-        verbose_name_plural = _('link translations')
+        verbose_name = _('Translation')
+        verbose_name_plural = _('Translations')
 
     def __unicode__(self):
         return self.name

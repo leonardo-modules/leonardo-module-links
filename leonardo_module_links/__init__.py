@@ -9,7 +9,7 @@ default_app_config = 'leonardo_module_links.LinksConfig'
 
 class Default(object):
 
-    optgroup = ('Links')
+    optgroup = ('Link lists')
 
     apps = [
             'leonardo_module_links',
@@ -25,6 +25,6 @@ class Default(object):
 
 class LinksConfig(AppConfig, Default):
     name = 'leonardo_module_links'
-    verbose_name = "Links Widgets"
+    verbose_name = "Link lists"
 
 default = Default()
