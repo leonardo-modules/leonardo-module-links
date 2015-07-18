@@ -3,12 +3,12 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from leonardo.module.web.models import Widget
+from leonardo.module.web.models import ListWidget
 
 from leonardo_module_links.models import LinkCategory, Link
 
 
-class LinkMenuWidget(Widget):
+class LinkMenuWidget(ListWidget):
     list = models.ForeignKey(LinkCategory, verbose_name=_("link category"), related_name="%(app_label)s_%(class)s_related")
 
     def get_links(self):
