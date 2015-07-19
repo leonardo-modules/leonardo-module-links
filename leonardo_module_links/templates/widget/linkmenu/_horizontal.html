@@ -1,12 +1,12 @@
 {% load thumbnail %}
 <div class="icon-box">
   <a href="{{ link.web_address }}" class="{% if link.target == '_modal' %}modal ajax-modal{% endif %} {% if link.target == '_blank' %}blank{% endif %}">
-    {% thumbnail link.image.file "250x48" format="PNG" as image %}
-    <img src="{{ image.url }}" alt="" /><br />
+	{% thumbnail link.image.file "250x48" format="PNG" as image %}
+	<img src="{{ image.url }}" alt="" /><br />
     <h3>{{ link }}</h3>
-    {% empty %}
+	{% empty %}
     <h3>{{ link }}</h3>
-    {% endthumbnail %}
+	{% endthumbnail %}
   </a>
   {{ link.translation.description|safe }}
 </div>

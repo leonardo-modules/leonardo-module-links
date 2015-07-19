@@ -3,17 +3,11 @@
 {% load thumbnail %}
 
 {% block content %}
-<ul class="horizontal">
-	{% for link in widget.list.link_set.all %}
-	<li>
-		<a href="{{ link.web_address }}" class="{% if link.target == '_modal' %}modal ajax-modal{% endif %} {% if link.target == '_blank' %}blank{% endif %}">
-			{% thumbnail link.image.file "250x48" format="PNG" as image %}
-			<img src="{{ image.url }}" alt="" /><br />
-			{% empty %}
-			<span>{{ link }}</span>
-			{% endthumbnail %}
-		</a>
-	</li>
-	{% endfor %}
-</ul>
+<div class="row">
+  {% for link in widget.list.link_set.all %}
+  <div class="col-md-4 col-sm-6 {% if forloop.counter0|divisibleby:"4" %}no-margin{% endif %} thumb">
+    {% include "widget/linkmenu/_icon.html" %}
+  </div>
+  {% endfor %}
+</div>
 {% endblock %}

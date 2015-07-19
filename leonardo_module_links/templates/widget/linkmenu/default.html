@@ -1,13 +1,13 @@
 {% extends widget.get_base_template %}
 
 {% block content %}
-<ul class="horizontal">
-{% for link in widget.list.link_set.all %}
-	<li>
-		<a href="{{ link.web_address }}" class="{% if link.target == '_modal' %}ajax-modal modal{% endif %} {% if link.target == '_blank' %}blank{% endif %}">
-			<span>{{ link }}</span>
-		</a>
-	</li>
-{% endfor %}
-</ul>
+cdsfds
+{{ widget.list.link_set.count }}
+<div class="row">
+  {% for link in widget.list.link_set.all %}
+  <div class="col-md-4 col-sm-6 thumb">
+    {% include "widget/linkmenu/_horizontal.html" %}
+  </div>
+  {% endfor %}
+</div>
 {% endblock %}
