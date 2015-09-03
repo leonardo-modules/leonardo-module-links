@@ -4,7 +4,7 @@
 
 {% block content %}
 {% for link in widget.list.link_set.all %}
-<a style="position: absolute; top: -93px; right: 0; border: 0;"  href="{{ link.web_address }}" >
+<a style="position: absolute; top: 0; right: 0; border: 0;"  href="{{ link.web_address }}" >
     <img src="{{ link.image.file.url }}" alt="" />
 </a>
 {% endfor %}
