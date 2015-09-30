@@ -1,13 +1,17 @@
 {% extends widget.get_base_template %}
+{% load divide %}
 
 {% block content %}
-cdsfds
-{{ widget.list.link_set.count }}
-<div class="row">
-  {% for link in widget.list.link_set.all %}
-  <div class="col-md-4 col-sm-6 thumb">
-    {% include "widget/linkmenu/_horizontal.html" %}
-  </div>
+{% block items %}
+{% for row in widget.get_rows %}
+  <div class="row">
+  {% for item in row %}
+    <div class="col-md-{{ 12|divide:widget.objects_per_row }}">
+      {% include widget.get_item_template with link=item %}
+    </div>
   {% endfor %}
-</div>
+  </div>
+{% endfor %}
 {% endblock %}
+{% endblock %}
+
