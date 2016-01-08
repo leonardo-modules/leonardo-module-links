@@ -1,9 +1,6 @@
 
 from django.apps import AppConfig
 
-from .widget import *
-
-
 default_app_config = 'leonardo_module_links.LinksConfig'
 
 
@@ -18,8 +15,8 @@ class Default(object):
     @property
     def widgets(self):
         return [
-            LinkButtonWidget,
-            LinkMenuWidget,
+            'leonardo_module_links.widget.models.LinkButtonWidget',
+            'leonardo_module_links.widget.models.LinkMenuWidget',
         ]
 
 
