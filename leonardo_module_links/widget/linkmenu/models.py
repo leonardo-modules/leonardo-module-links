@@ -7,9 +7,13 @@ from django.utils.translation import ugettext_lazy as _
 from leonardo.module.web.models import ListWidget
 
 from leonardo_module_links.models import LinkCategory
+from .forms import LinksWidgetForm
 
 
 class LinkMenuWidget(ListWidget):
+
+    feincms_item_editor_form = LinksWidgetForm
+
     list = models.ForeignKey(LinkCategory, verbose_name=_(
         "link category"), related_name="%(app_label)s_%(class)s_related")
 

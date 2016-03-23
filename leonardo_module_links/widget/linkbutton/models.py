@@ -5,6 +5,8 @@ from django.utils.translation import ugettext_lazy as _
 from leonardo.module.web.models import Widget
 from leonardo_module_links.models import Link
 
+from .forms import LinkWidgetForm
+
 ON_CLICK_CHOICES = (
     ('go_to_page', _('go to linked page')),
     ('open_modal', _('open in modal window')),
@@ -13,6 +15,9 @@ ON_CLICK_CHOICES = (
 
 
 class LinkButtonWidget(Widget):
+
+    feincms_item_editor_form = LinkWidgetForm
+
     link = models.ForeignKey(Link, verbose_name=_(
         "link"), related_name="%(app_label)s_%(class)s_related")
     detail = models.CharField(max_length=255, verbose_name=_(

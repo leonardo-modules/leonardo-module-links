@@ -36,7 +36,8 @@ class Link(models.Model, TranslatedObjectMixin):
                                      blank=True, null=True, verbose_name=_("link relationship"))
     image = models.ForeignKey(
         Image, blank=True, null=True, verbose_name=_("Image"))
-    category = models.ForeignKey(LinkCategory, verbose_name=_("List"))
+    category = models.ForeignKey(LinkCategory, verbose_name=_("List"),
+                                 null=True, blank=True)
     visible = models.BooleanField(verbose_name=_("visible"), default=True)
     ordering = models.PositiveIntegerField(
         verbose_name=_("Ordering"), default=0)
