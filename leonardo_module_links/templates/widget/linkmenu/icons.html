@@ -3,13 +3,16 @@
 {% load thumbnail %}
 
 {% block content %}
-<div class="row">
-  {% for link in widget.list.link_set.all %}
-  <div class="col-md-4 col-sm-6 {% if forloop.counter0|divisibleby:"4" %}no-margin{% endif %} thumb">
+{% block items %}
+{% for row in widget.get_rows %}
+  <div class="row">
+  {% for item in row %}
+    <div class="col-md-{{ widget.columns_classes.0 }} col-xs-{{ widget.columns_classes.2 }} col-sm-{{ widget.columns_classes.1 }} thumb">
 	  <a href="{{ link.web_address }}" {% if link.target == '_blank' %}target=blank{% endif %} {% if link.target == '_modal' %}data-title="{{ widget.image.default_caption|default:'' }}" data-footer="{{ widget.image.description|default:'' }}" data-toggle="lightbox" rel="{{ widget.fe_identifier }}"{% endif %}>
     	{% include "widget/linkmenu/_icon.html" %}
 	  </a>
-  </div>
+ 	 </div>
   {% endfor %}
-</div>
+  </div>
+{% endfor %}
 {% endblock %}
