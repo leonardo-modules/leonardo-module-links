@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
+from django.conf import settings
 import feincms.translations
 
 
@@ -45,7 +46,7 @@ class Migration(migrations.Migration):
             name='LinkTranslation',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('language_code', models.CharField(default=b'en', max_length=10, verbose_name='language', choices=[(b'en', b'EN'), (b'cs', b'CS')])),
+                ('language_code', models.CharField(default=settings.LANGUAGES[0][0], max_length=10, verbose_name='language', choices=settings.LANGUAGES)),
                 ('name', models.CharField(max_length=200, verbose_name='name')),
                 ('description', models.TextField(verbose_name='description', blank=True)),
                 ('parent', models.ForeignKey(related_name='translations', to='leonardo_module_links.Link')),
