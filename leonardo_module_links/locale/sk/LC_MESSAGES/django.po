@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-30 11:30+0100\n"
+"POT-Creation-Date: 2016-07-25 10:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,162 +18,151 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n>1 && n<5 ? 1 : 2;\n"
 
-#: models.py:17 models.py:76
+#: forms.py:73
+msgid "Base"
+msgstr ""
+
+#: forms.py:93 widget/linkmenu/forms.py:12
+msgid "Links"
+msgstr ""
+
+#: models.py:11 models.py:79
 msgid "name"
 msgstr ""
 
-#: models.py:18
+#: models.py:12
 msgid "slug"
 msgstr ""
 
-#: models.py:19 models.py:77
+#: models.py:13 models.py:80
 msgid "description"
 msgstr ""
 
-#: models.py:25 models.py:40 widget/linkmenu/models.py:11
-msgid "link category"
+#: models.py:19
+msgid "Link list"
+msgstr ""
+
+#: models.py:20
+msgid "Link lists"
+msgstr ""
+
+#: models.py:24
+msgid "Same window"
+msgstr ""
+
+#: models.py:25
+msgid "New window"
 msgstr ""
 
 #: models.py:26
-msgid "link categories"
+msgid "Modal window"
 msgstr ""
 
-#: models.py:30
-msgid "same window"
+#: models.py:32 tables.py:51 templates/widget/linkmenu/detail.html:20
+#: widget/linkbutton/forms.py:11
+msgid "Link"
 msgstr ""
 
-#: models.py:31
-msgid "modal window"
-msgstr ""
-
-#: models.py:32
-msgid "new tab"
-msgstr ""
-
-#: models.py:36
-msgid "web address"
-msgstr ""
-
-#: models.py:37
+#: models.py:34
 msgid "target"
 msgstr ""
 
-#: models.py:38
+#: models.py:36
 msgid "link relationship"
 msgstr ""
 
+#: models.py:38 tables.py:55
+msgid "Image"
+msgstr ""
+
 #: models.py:39
-msgid "image"
+msgid "List"
 msgstr ""
 
 #: models.py:41
 msgid "visible"
 msgstr ""
 
-#: models.py:42
-msgid "ordering"
+#: models.py:43 tables.py:58
+msgid "Ordering"
 msgstr ""
 
-#: models.py:67 widget/linkbutton/models.py:32
-msgid "link"
+#: models.py:69
+msgid "Link item"
 msgstr ""
 
-#: models.py:68
-msgid "links"
+#: models.py:70
+msgid "Link items"
 msgstr ""
 
-#: models.py:80
-msgid "link translation"
+#: models.py:83
+msgid "Translation"
 msgstr ""
 
-#: models.py:81
-msgid "link translations"
+#: models.py:84
+msgid "Translations"
 msgstr ""
 
-#: templates/widget/linkbutton/default.html:10
+#: tables.py:52
+msgid "Target"
+msgstr ""
+
+#: tables.py:54
+msgid "Relationship"
+msgstr ""
+
+#: tables.py:57
+msgid "Visible"
+msgstr ""
+
+#: templates/widget/linkbutton/default.html:9
 msgid "More"
 msgstr ""
 
-#: templates/widget/linkmenu/detail.html:20
-msgid "Link"
+#: widget/linkbutton/forms.py:12
+msgid "Select a link."
 msgstr ""
 
 #: widget/linkbutton/models.py:11
-msgid "normal"
-msgstr ""
-
-#: widget/linkbutton/models.py:12
-msgid "large"
-msgstr ""
-
-#: widget/linkbutton/models.py:16
-msgid "primary"
-msgstr ""
-
-#: widget/linkbutton/models.py:17
-msgid "secondary"
-msgstr ""
-
-#: widget/linkbutton/models.py:21
-msgid "left"
-msgstr ""
-
-#: widget/linkbutton/models.py:22
-msgid "right"
-msgstr ""
-
-#: widget/linkbutton/models.py:26
 msgid "go to linked page"
 msgstr ""
 
-#: widget/linkbutton/models.py:27
+#: widget/linkbutton/models.py:12
 msgid "open in modal window"
 msgstr ""
 
-#: widget/linkbutton/models.py:28
-msgid "open in new window/tab"
+#: widget/linkbutton/models.py:13
+msgid "open new window"
 msgstr ""
 
-#: widget/linkbutton/models.py:33
-msgid "alt. link"
+#: widget/linkbutton/models.py:22
+msgid "link"
 msgstr ""
 
-#: widget/linkbutton/models.py:33
-msgid "You can use relative or absolute URLs."
-msgstr ""
-
-#: widget/linkbutton/models.py:34
-msgid "text"
-msgstr ""
-
-#: widget/linkbutton/models.py:35
-msgid "size"
-msgstr ""
-
-#: widget/linkbutton/models.py:36
-msgid "priority"
-msgstr ""
-
-#: widget/linkbutton/models.py:37
-msgid "alignment"
-msgstr ""
-
-#: widget/linkbutton/models.py:38
+#: widget/linkbutton/models.py:24
 msgid "on click action"
 msgstr ""
 
-#: widget/linkbutton/models.py:42
+#: widget/linkbutton/models.py:28
 msgid "link button"
 msgstr ""
 
-#: widget/linkbutton/models.py:43
+#: widget/linkbutton/models.py:29
 msgid "link buttons"
 msgstr ""
 
+#: widget/linkmenu/forms.py:13
+msgid "Select a list of links."
+msgstr ""
+
 #: widget/linkmenu/models.py:18
+msgid "link category"
+msgstr ""
+
+#: widget/linkmenu/models.py:30
 msgid "links menu"
 msgstr ""
 
-#: widget/linkmenu/models.py:19
+#: widget/linkmenu/models.py:31
 msgid "links menus"
 msgstr ""

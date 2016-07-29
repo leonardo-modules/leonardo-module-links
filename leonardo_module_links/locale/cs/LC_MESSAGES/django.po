@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-30 11:30+0100\n"
+"POT-Creation-Date: 2016-07-25 10:23+0200\n"
 "PO-Revision-Date: 2012-03-13 09:50\n"
 "Last-Translator:   <mail@newt.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,165 +19,229 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n>1 && n<5 ? 1 : 2;\n"
 "X-Translated-Using: django-rosetta 0.6.3\n"
 
-#: models.py:17 models.py:76
+#: forms.py:73
+msgid "Base"
+msgstr ""
+
+#: forms.py:93 widget/linkmenu/forms.py:12
+#, fuzzy
+#| msgid "Link"
+msgid "Links"
+msgstr "Odkaz"
+
+#: models.py:11 models.py:79
 msgid "name"
 msgstr "jméno"
 
-#: models.py:18
+#: models.py:12
 msgid "slug"
 msgstr "URI"
 
-#: models.py:19 models.py:77
+#: models.py:13 models.py:80
 msgid "description"
 msgstr "popis"
 
-#: models.py:25 models.py:40 widget/linkmenu/models.py:11
-msgid "link category"
-msgstr "seznam odkazů"
+#: models.py:19
+#, fuzzy
+#| msgid "Link"
+msgid "Link list"
+msgstr "Odkaz"
 
-#: models.py:26
-msgid "link categories"
-msgstr "seznamy odkazů"
+#: models.py:20
+msgid "Link lists"
+msgstr ""
 
-#: models.py:30
-msgid "same window"
+#: models.py:24
+#, fuzzy
+#| msgid "same window"
+msgid "Same window"
 msgstr "ve stejném okně"
 
-#: models.py:31
-msgid "modal window"
+#: models.py:25
+#, fuzzy
+#| msgid "same window"
+msgid "New window"
+msgstr "ve stejném okně"
+
+#: models.py:26
+#, fuzzy
+#| msgid "modal window"
+msgid "Modal window"
 msgstr "modální okno"
 
-#: models.py:32
-msgid "new tab"
-msgstr "nová záložka"
+#: models.py:32 tables.py:51 templates/widget/linkmenu/detail.html:20
+#: widget/linkbutton/forms.py:11
+msgid "Link"
+msgstr "Odkaz"
 
-#: models.py:36
-msgid "web address"
-msgstr "webová adresa"
-
-#: models.py:37
+#: models.py:34
 msgid "target"
 msgstr "cíl"
 
-#: models.py:38
+#: models.py:36
 msgid "link relationship"
 msgstr "vztahy odkazu"
 
-#: models.py:39
-msgid "image"
+#: models.py:38 tables.py:55
+#, fuzzy
+#| msgid "image"
+msgid "Image"
 msgstr "obrázek"
+
+#: models.py:39
+msgid "List"
+msgstr ""
 
 #: models.py:41
 msgid "visible"
 msgstr "viditelný"
 
-#: models.py:42
-msgid "ordering"
+#: models.py:43 tables.py:58
+#, fuzzy
+#| msgid "ordering"
+msgid "Ordering"
 msgstr "řazení"
 
-#: models.py:67 widget/linkbutton/models.py:32
-msgid "link"
-msgstr "odkaz"
+#: models.py:69
+#, fuzzy
+#| msgid "Link"
+msgid "Link item"
+msgstr "Odkaz"
 
-#: models.py:68
-msgid "links"
-msgstr "odkazy"
+#: models.py:70
+msgid "Link items"
+msgstr ""
 
-#: models.py:80
-msgid "link translation"
+#: models.py:83
+#, fuzzy
+#| msgid "link translation"
+msgid "Translation"
 msgstr "překlad"
 
-#: models.py:81
-msgid "link translations"
+#: models.py:84
+#, fuzzy
+#| msgid "link translations"
+msgid "Translations"
 msgstr "překlady"
 
-#: templates/widget/linkbutton/default.html:10
+#: tables.py:52
+#, fuzzy
+#| msgid "target"
+msgid "Target"
+msgstr "cíl"
+
+#: tables.py:54
+#, fuzzy
+#| msgid "link relationship"
+msgid "Relationship"
+msgstr "vztahy odkazu"
+
+#: tables.py:57
+#, fuzzy
+#| msgid "visible"
+msgid "Visible"
+msgstr "viditelný"
+
+#: templates/widget/linkbutton/default.html:9
 msgid "More"
 msgstr "Více"
 
-#: templates/widget/linkmenu/detail.html:20
-msgid "Link"
-msgstr "Odkaz"
+#: widget/linkbutton/forms.py:12
+#, fuzzy
+#| msgid "alt. link"
+msgid "Select a link."
+msgstr "alt. odkaz"
 
 #: widget/linkbutton/models.py:11
-msgid "normal"
-msgstr "normální"
-
-#: widget/linkbutton/models.py:12
-msgid "large"
-msgstr "velké"
-
-#: widget/linkbutton/models.py:16
-msgid "primary"
-msgstr "primární"
-
-#: widget/linkbutton/models.py:17
-msgid "secondary"
-msgstr "sekundární"
-
-#: widget/linkbutton/models.py:21
-msgid "left"
-msgstr "vlevo"
-
-#: widget/linkbutton/models.py:22
-msgid "right"
-msgstr "vpravo"
-
-#: widget/linkbutton/models.py:26
 msgid "go to linked page"
 msgstr "přejít na stránku"
 
-#: widget/linkbutton/models.py:27
+#: widget/linkbutton/models.py:12
 msgid "open in modal window"
 msgstr "otevřít v modálním okně"
 
-#: widget/linkbutton/models.py:28
-msgid "open in new window/tab"
+#: widget/linkbutton/models.py:13
+#, fuzzy
+#| msgid "open in new window/tab"
+msgid "open new window"
 msgstr "Otevřít v novém okně/záložce"
 
-#: widget/linkbutton/models.py:33
-msgid "alt. link"
-msgstr "alt. odkaz"
+#: widget/linkbutton/models.py:22
+msgid "link"
+msgstr "odkaz"
 
-#: widget/linkbutton/models.py:33
-msgid "You can use relative or absolute URLs."
-msgstr "Můžete použít relativní nebo absolutní URL."
-
-#: widget/linkbutton/models.py:34
-msgid "text"
-msgstr "text"
-
-#: widget/linkbutton/models.py:35
-msgid "size"
-msgstr "velikost"
-
-#: widget/linkbutton/models.py:36
-msgid "priority"
-msgstr "priorita"
-
-#: widget/linkbutton/models.py:37
-msgid "alignment"
-msgstr "zarovnání"
-
-#: widget/linkbutton/models.py:38
+#: widget/linkbutton/models.py:24
 msgid "on click action"
 msgstr "akce po kliknutí"
 
-#: widget/linkbutton/models.py:42
+#: widget/linkbutton/models.py:28
 msgid "link button"
 msgstr "tlačítko/odkaz"
 
-#: widget/linkbutton/models.py:43
+#: widget/linkbutton/models.py:29
 msgid "link buttons"
 msgstr "tlačítka/odkazy"
 
+#: widget/linkmenu/forms.py:13
+msgid "Select a list of links."
+msgstr ""
+
 #: widget/linkmenu/models.py:18
+msgid "link category"
+msgstr "seznam odkazů"
+
+#: widget/linkmenu/models.py:30
 msgid "links menu"
 msgstr "seznam odkazů"
 
-#: widget/linkmenu/models.py:19
+#: widget/linkmenu/models.py:31
 msgid "links menus"
 msgstr "seznamy odkazů"
+
+#~ msgid "link categories"
+#~ msgstr "seznamy odkazů"
+
+#~ msgid "new tab"
+#~ msgstr "nová záložka"
+
+#~ msgid "web address"
+#~ msgstr "webová adresa"
+
+#~ msgid "links"
+#~ msgstr "odkazy"
+
+#~ msgid "normal"
+#~ msgstr "normální"
+
+#~ msgid "large"
+#~ msgstr "velké"
+
+#~ msgid "primary"
+#~ msgstr "primární"
+
+#~ msgid "secondary"
+#~ msgstr "sekundární"
+
+#~ msgid "left"
+#~ msgstr "vlevo"
+
+#~ msgid "right"
+#~ msgstr "vpravo"
+
+#~ msgid "You can use relative or absolute URLs."
+#~ msgstr "Můžete použít relativní nebo absolutní URL."
+
+#~ msgid "text"
+#~ msgstr "text"
+
+#~ msgid "size"
+#~ msgstr "velikost"
+
+#~ msgid "priority"
+#~ msgstr "priorita"
+
+#~ msgid "alignment"
+#~ msgstr "zarovnání"
 
 #~ msgid "new window or tab"
 #~ msgstr "nové okno nebo záložka"
