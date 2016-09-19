@@ -24,8 +24,6 @@ msgid "Base"
 msgstr ""
 
 #: forms.py:93 widget/linkmenu/forms.py:12
-#, fuzzy
-#| msgid "Link"
 msgid "Links"
 msgstr "Odkaz"
 
@@ -42,32 +40,24 @@ msgid "description"
 msgstr "popis"
 
 #: models.py:19
-#, fuzzy
-#| msgid "Link"
 msgid "Link list"
-msgstr "Odkaz"
+msgstr "Seznam odkazů"
 
 #: models.py:20
 msgid "Link lists"
-msgstr ""
+msgstr "Seznamy odkazů"
 
 #: models.py:24
-#, fuzzy
-#| msgid "same window"
 msgid "Same window"
 msgstr "ve stejném okně"
 
 #: models.py:25
-#, fuzzy
-#| msgid "same window"
 msgid "New window"
-msgstr "ve stejném okně"
+msgstr "v novém okně"
 
 #: models.py:26
-#, fuzzy
-#| msgid "modal window"
 msgid "Modal window"
-msgstr "modální okno"
+msgstr "v modálním okně"
 
 #: models.py:32 tables.py:51 templates/widget/linkmenu/detail.html:20
 #: widget/linkbutton/forms.py:11
@@ -83,62 +73,46 @@ msgid "link relationship"
 msgstr "vztahy odkazu"
 
 #: models.py:38 tables.py:55
-#, fuzzy
-#| msgid "image"
 msgid "Image"
 msgstr "obrázek"
 
 #: models.py:39
 msgid "List"
-msgstr ""
+msgstr "Seznam"
 
 #: models.py:41
 msgid "visible"
 msgstr "viditelný"
 
 #: models.py:43 tables.py:58
-#, fuzzy
-#| msgid "ordering"
 msgid "Ordering"
-msgstr "řazení"
+msgstr "Pořadí"
 
 #: models.py:69
-#, fuzzy
-#| msgid "Link"
 msgid "Link item"
 msgstr "Odkaz"
 
 #: models.py:70
 msgid "Link items"
-msgstr ""
+msgstr "Odkazy"
 
 #: models.py:83
-#, fuzzy
-#| msgid "link translation"
 msgid "Translation"
 msgstr "překlad"
 
 #: models.py:84
-#, fuzzy
-#| msgid "link translations"
 msgid "Translations"
 msgstr "překlady"
 
 #: tables.py:52
-#, fuzzy
-#| msgid "target"
 msgid "Target"
 msgstr "cíl"
 
 #: tables.py:54
-#, fuzzy
-#| msgid "link relationship"
 msgid "Relationship"
 msgstr "vztahy odkazu"
 
 #: tables.py:57
-#, fuzzy
-#| msgid "visible"
 msgid "Visible"
 msgstr "viditelný"
 
@@ -147,10 +121,8 @@ msgid "More"
 msgstr "Více"
 
 #: widget/linkbutton/forms.py:12
-#, fuzzy
-#| msgid "alt. link"
 msgid "Select a link."
-msgstr "alt. odkaz"
+msgstr "Vyberte odkaz"
 
 #: widget/linkbutton/models.py:11
 msgid "go to linked page"
@@ -161,8 +133,6 @@ msgid "open in modal window"
 msgstr "otevřít v modálním okně"
 
 #: widget/linkbutton/models.py:13
-#, fuzzy
-#| msgid "open in new window/tab"
 msgid "open new window"
 msgstr "Otevřít v novém okně/záložce"
 
