@@ -12,7 +12,8 @@ class Default(object):
     ]
 
     css_files = [
-        'css/bootstrap-social.css'
+        'css/bootstrap-social.css',
+        'css/set1.css'
     ]
 
     @property
@@ -26,5 +27,6 @@ class Default(object):
 class LinksConfig(AppConfig, Default):
     name = 'leonardo_module_links'
     verbose_name = "Link lists"
+
 
 default = Default()
