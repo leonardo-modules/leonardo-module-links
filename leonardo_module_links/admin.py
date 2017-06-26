@@ -1,14 +1,16 @@
 
 from django.contrib import admin
 from django.conf import settings
-
+from ckeditor.widgets import CKEditorWidget
 from .models import Link, LinkCategory, LinkTranslation
-
+from django.db import models
 
 class LinkTranslation_Inline(admin.TabularInline):
     model = LinkTranslation
     max_num = len(settings.LANGUAGES)
-
+    formfield_overrides = {
+        models.TextField: {'widget': CKEditorWidget}
+    }
 
 class Link_Inline(admin.TabularInline):
     model = Link
